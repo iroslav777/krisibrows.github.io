@@ -1,0 +1,667 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', serif;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav_list li {
+    list-style-type: none;
+}
+.nav_list{
+    display: flex;
+}
+.nav ul>li{
+    display: block;
+    position: relative;
+    margin-left: 2rem; 
+}
+.drop_list{
+    display: none;
+    position: absolute;
+    left: -1.2rem;
+    top: 1.3rem;
+    background-color:rgb(255, 255, 255);
+    width: 15rem;
+}
+
+.drop_list_two {
+    display: none;
+    position: absolute;
+    left: -1.95rem;
+    top: 1.3rem;
+    background-color:rgb(255, 255, 255);
+    width: 6rem;
+}
+.drop_list li, .drop_list_two li{
+    margin: 1rem 0;
+}
+.nav_list a.parent{
+    margin: 0 0.45rem 0 0;
+}
+
+.arrow {
+  position: absolute;
+  top:0.4rem;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  cursor: pointer;
+}
+.arrow_two {
+    position: absolute;
+    top:0.4rem;
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    cursor: pointer;
+}
+.active {
+    top: 0.67rem;
+    transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.nav ul a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    display: flex;
+    width: 12.5rem;
+    align-items: center;
+}
+.logo p{
+    font-size: 1rem;
+    margin: 0;
+}
+.logo img {
+    width:3.65rem;
+    margin-right: 0.62rem;
+}
+
+
+.mainscreen{
+    background-image: url('../img/mainescreen.jpg');
+    background-size:cover;
+    background-position: right;
+    overflow: hidden;
+    padding-bottom: 5rem;
+
+}
+.mainscreen-korekciya{
+    background-image: url('../img/korekciya.jpg');
+    background-size:cover;
+    background-position: right;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.mainscreen h1 {
+    margin-top: 4.375rem;
+    font-size: 3.125rem;
+    max-width: 37.5rem;
+    margin-bottom: 3.125rem;
+}
+
+.mainscreen p {
+    font-size: 1.87rem;
+    max-width: 37.5rem;
+    margin-bottom: 3.125rem;
+
+}
+
+.mainebutton {
+    overflow: hidden;
+    width: 12.5rem;
+    height: 3.125rem;
+    background-color: rgb(169, 248, 169);
+    border: none;
+}
+
+.mainebutton a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding:0.7rem 3.05rem;
+    
+}
+
+.mainebutton :hover{
+    background: rgb(0, 172, 46);
+    border: none;
+}
+
+.nav ul li a:hover{
+    color: rgb(169, 248, 169);
+}
+.cardcontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+
+h2{
+    margin: 1.5rem 0;
+    text-align: center;
+    
+}
+
+.pricecard {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    border: 2px solid grey;  
+    margin-bottom: 1.5rem;
+}
+
+
+.imgcard {
+    width: 100%;
+    margin:  0 auto;
+    height: 50%;
+    overflow: hidden;
+}
+
+.imgcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: ;
+}
+
+.textcard {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.textcard p, .ouroffers p {
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+}
+
+.sliderScreen {
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 3.125rem;
+}
+
+
+.swiperImg {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiperImg img {
+    width: 100%;
+
+}
+.formScreen {
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+
+.formInput img{
+    width: 0.65rem;
+    display: none;
+    cursor: pointer;
+}
+
+.formInput input {
+    font-size: 1rem;
+    padding-left: 10px;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 3rem;
+    outline: none;
+}
+.send {
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(169, 248, 169);
+    border:none;
+    font-size: 1.125rem;
+}
+
+.send:hover{
+    background-color:rgb(0, 172, 46);
+}
+.activeMenu {
+    display: none;
+}
+.openMenu {
+    display: none;
+    width: 2.5rem;
+    height: 2.2rem;
+  }
+  
+  .openMenu span {
+    display: block;
+    width: 90%;
+    margin: 0.4rem auto;
+    height: 0.3rem;
+    background-color: black;
+  }
+  
+  .openMenu.activeMenu span:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .openMenu.activeMenu span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .openMenu.activeMenu span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+position: relative;
+bottom: 0.45rem;
+  }
+
+.contactSection {
+    background-color:rgb(59, 59, 59);
+    color: white;
+}
+
+.flexContactSection {
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+.flexContactSection h3 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.flexContact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.myForm {
+    width: 40%;
+    text-align: center;
+}
+.myForm h3 {
+    margin-bottom: 3rem;
+}
+.instaLink {
+
+    margin-bottom: 3rem;
+}
+
+.instaLink h3 {
+    font-size: 1.5rem;
+}
+
+.instaLink .logo {
+    display: flex;
+}
+
+.logo a{
+    text-decoration: none;
+    color:black;
+}
+
+.instaLink a{
+    text-decoration: none;
+    color: black;
+}
+.instatitle a{
+    color: white;
+    font-size: 1.125rem;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location p{
+    font-size: 1.125rem;
+}
+
+.footer-flex{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-flex a:hover {
+color:rgb(0, 172, 46);
+}
+
+.weightText {
+    display: inline-block;
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+.ouroffers ul li{
+list-style-position: inside;
+list-style-type: decimal;
+font-size: 1.125rem;
+line-height: 1.4rem;
+font-weight: 400;
+margin-top:1rem;
+}
+
+.policy-screen {
+    background-color:rgb(218, 218, 218);
+}
+.thank-screen {
+    height: 40rem;
+    background-color: rgb(188, 187, 187);
+}
+.thank-screen h1{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.flexblock {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.textblock {
+    width: 45%;
+}
+
+.imgblock {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+.imgblock img {
+    width: 100%;
+    height: 100%;
+}
+.orderone {
+    order:0;
+}
+.ordertwo {
+    order:1;
+}
+.orderthree {
+    order:3
+}
+.orderfour {
+    order:2;
+}
+.orderfive {
+    order:4;
+}
+.ordersix {
+    order:5;
+}
+.price-table-korektsiia {
+    width: 100%;
+    height: 100%;
+}
+.pricetablefull{
+    width: 100%;
+    height: 100%;
+}
+.pricetable {
+    width: 45%;
+    height: 100%;
+}
+
+table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+		tr:hover {background-color:#f5f5f5;}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+@media (max-width:1024px) {
+    .openMenu {
+    display:block;
+    cursor: pointer;
+}
+.nav{
+    display:none;
+    width: 50%;
+}
+.drop_list, .drop_list_two {
+    display: none;
+    position: relative;
+    left:0;
+    top: 0;
+    background-color:rgb(255, 255, 255);
+    width: 15rem;
+}
+.arrow, .arrow_two {
+    top: 0.42rem;
+    padding: 4px;
+  }
+
+.active {
+    top: 0.8rem;
+}
+.drop_list li:last-child {
+    margin-bottom: 0;
+}
+.drop_link, .drop_link_two{
+    text-align: center;
+}
+.nav ul > li{
+    margin-left:0;
+}
+.nav_list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.nav ul li a{
+    font-size: 1.2rem;
+}
+.mainscreen h1 {
+    font-size: 1.8rem;
+    margin: 3.125rem auto 3.125rem auto;
+}
+
+.mainscreen p {
+    font-size: 1.4rem;
+    margin: 0 auto 3.125rem auto;
+}
+ .mainscreen {
+    text-align: center;
+    background-position: left;
+ }
+ .mainscreen-korekciya {
+    text-align: center;
+    background-position: left;
+ }
+
+ .pricecard {
+    width: 30%;
+ }
+  
+.pricescreen {
+    overflow: hidden;
+}
+
+.cardcontainer {
+    margin-top:0;
+}
+.pricescreen {
+    padding-bottom: 0rem;
+}
+.show {
+    display: flex;
+}
+
+.navbar .nav {
+    width: 100%;
+}
+.flexContact{
+    width: 100%;
+}
+
+.myForm {
+    order:0;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.flexContact{
+    order: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.instaLink {
+margin: 0 auto 3rem auto;
+}
+
+.location {
+margin-bottom: 2rem;
+}
+}
+
+@media (max-width:500px) {
+    .cardcontainer{
+        justify-content: center;
+
+    }
+    .pricecard {
+        width: 90%;     
+        height: 28rem;
+        margin-bottom: 1.5rem;
+     }
+     .pricecard:last-child {
+        margin-bottom: 0;
+     }
+     .imgcard img{
+        width: 100%;
+     }
+     .swiperImg {
+        width: 90%;
+     }
+
+     .footer-flex{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-flex p {
+        margin-bottom: 1rem;
+    }
+
+    .nav ul li{
+        margin-bottom: 1rem; 
+    }
+    .textblock {
+        width: 100%;
+    }
+    
+    .imgblock {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .orderone {
+        order:0;
+    }
+    .ordertwo {
+        order:1;
+    }
+    .orderthree {
+        order:2;
+    }
+    .orderfour {
+        order:3;
+    }
+    .orderfive {
+        order:4;
+    }
+    .ordersix {
+        order:5;
+    }
+    .pricetable {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+}
+
+    

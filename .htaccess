@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# перенаправляем запросы, которые начинаются с /ru/ на соответствующую страницу
+RewriteRule ^ru/?$ /ru/index.php [L,NC,QSA]
+
+# перенаправляем все остальные запросы на страницу index.php в корневой папке
+RewriteRule ^$ /index.php [L]
+
+# правила для перенаправления на страницы без расширения .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
